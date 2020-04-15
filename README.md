@@ -1,32 +1,56 @@
+<!--
+
+author:   Sebastian Zug & Georg Jaeger
+email:    sebastian.zug@informatik.tu-freiberg.de & georg.jaeger@informatik.tu-freiberg.de
+version:  1.0.0
+language: de
+narrator: Deutsch Female
+
+comment:  This is a very simple comment.
+          Multiline is also okay.
+
+script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
+          https://felixhao28.github.io/JSCPP/dist/JSCPP.es5.min.js
+
+link: https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
+
+translation: Deutsch  translations/German.md
+translation: Français translations/French.md
+translation: Русский  translations/Russian.md
+
+
+-->
+
 # Praktische Phase des Softwaretechnologie-Projektes 2020
 
 ## Aufgabenkomplexe
 
-1. Extraktion von RoboCup Objekten aus 2D Kamera-Bildern
+**1. Extraktion von RoboCup Objekten aus 2D Kamera-Bildern**
 
-In diesem Kontext arbeiten die Teams kompetitiv an einer identischen
-Aufgabenstellung. Wir haben einen Zugriff auf mehrere tausend Bilder anderer
-Teams, die den Blick des Roboters auf die Arbeitsflächen enthalten. Darauf sind
-die zu handhabenden Objekte mehr oder minder wahllos verstreut. Diese müssen
-erkannt und im Bildkoordinatensystem lokalisiert werden.
+   In diesem Kontext arbeiten die Teams kompetitiv an einer identischen
+   Aufgabenstellung. Wir haben einen Zugriff auf mehrere tausend Bilder anderer
+   Teams, die den Blick des Roboters auf die Arbeitsflächen enthalten. Darauf sind
+   die zu handhabenden Objekte mehr oder minder wahllos verstreut. Diese müssen
+   erkannt und im Bildkoordinatensystem lokalisiert werden.
 
-2. Spezifische Module für ERIKA
+**2. Spezifische Module für ERIKA**
 
-In diesem Komplex zielen die Aufgaben auf die weitere Entwicklung der Fertigkeiten
-von ERIKA, unserem RoboCup@Work-System. Einige von Ihnen arbeiten ja bereits im
-Team TUFbots an konkreten Fragestellungen, wiederum andere würden gern einsteigen.
-Denken Sie bitte daran, dass Sie ggf. im Laufe des Semesters nicht direkt auf dem
-Roboter arbeiten können. ROS bags oder Erfahrung in einer Simulationsumgebung
-könnten hier hilfreich sein.
+   In diesem Komplex zielen die Aufgaben auf die weitere Entwicklung der Fertigkeiten
+   von ERIKA, unserem RoboCup@Work-System. Einige von Ihnen arbeiten ja bereits im
+   Team TUFbots an konkreten Fragestellungen, wiederum andere würden gern einsteigen.
+   Denken Sie bitte daran, dass Sie ggf. im Laufe des Semesters nicht direkt auf dem
+   Roboter arbeiten können. ROS bags oder Erfahrung in einer Simulationsumgebung
+   könnten hier hilfreich sein.
 
 ## Ablaufplan
 
-Die Gruppen zum ersten Aufgabenkomplexe treffen sich wöchentlich Montags 09:15 - 10:45.
-Die Gruppen zum zweiten Aufgabenkomplexe treffen sich wöchentlich Montags 16:00 - 17:30.
+Wöchentliche Meetings:
+* Gruppen zum ersten Aufgabenkomplexe Montags 09:15 - 10:45
+* Gruppen zum zweiten Aufgabenkomplexe Montags 16:00 - 17:30
 
 Zusätzlich werden an diesen Terminen die Vorträge eingegliedert:
 
-### Ablaufplan für die Vorträge
+**Ablaufplan für die Vorträge**
 
 | **Datum**              | **Vorträge**     |
 |:-----------------------|:-----------------|
@@ -68,8 +92,8 @@ Letztlich steht auch die Softwarearchitektur als zentrale Komponent eines Softwa
 Hier soll vor allem eine konsistente, intuitive Struktur angestrebt werden.
 
 
-## Beispielrechnung
+**Beispielrechnung:**
 
-| **Vortrag 1** | **Vortrag 2** | **Vortrag 3** | **Dokumentation** | **Tooling** | **Softwarearchitektur** | **Note** |
-|:--------------|:--------------|:--------------|:------------------|:------------|:------------------------|:---------|
-| 1.0 * 2/9     | 2.3 * 2/9     | 1.3 * 2/9     | 2.0 * 1/9         | 1.3 * 1/9   | 1.7 * 1/9               | 1.7      |
+| **Vortrag 1**   | **Vortrag 2**    | **Vortrag 3**    | **Dokumentation** | **Tooling**      | **Softwarearchitektur** | **Note** |
+|:----------------|:-----------------|:-----------------|:------------------|:-----------------|:------------------------|:---------|
+| $1.0 \cdot 2/9$ | $2.3 \cdot  2/9$ | $1.3 \cdot  2/9$ | $2.0 \cdot 1/9$   | $1.3 \cdot  1/9$ | $1.7 \cdot 1/9$         | **1.7**  |
