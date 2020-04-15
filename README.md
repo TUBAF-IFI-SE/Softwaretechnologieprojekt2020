@@ -23,6 +23,8 @@ translation: Русский  translations/Russian.md
 
 # Praktische Phase des Softwaretechnologie-Projektes 2020
 
+Die interaktive Ansicht dieses Kurses ist unter folgendem [Link](https://liascript.github.io/course/?https://raw.githubusercontent.com/TUBergakademieFreiberg/Softwaretechnologieprojekt2020/master/README.md) verfügbar.
+
 ## Aufgabenkomplexe
 
 **1. Extraktion von RoboCup Objekten aus 2D Kamera-Bildern**
