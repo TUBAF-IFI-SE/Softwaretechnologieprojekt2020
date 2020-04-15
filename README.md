@@ -1,27 +1,47 @@
 # Praktische Phase des Softwaretechnologie-Projektes 2020
 
-## Themen
+## Aufgabenkomplexe
 
-* Klassifikation von Objekten
-* Migration zu ROS2 (?)
-* Trajektorienplanung mittels Simulation
+1. Extraktion von RoboCup Objekten aus 2D Kamera-Bildern
+
+In diesem Kontext arbeiten die Teams kompetitiv an einer identischen
+Aufgabenstellung. Wir haben einen Zugriff auf mehrere tausend Bilder anderer
+Teams, die den Blick des Roboters auf die Arbeitsflächen enthalten. Darauf sind
+die zu handhabenden Objekte mehr oder minder wahllos verstreut. Diese müssen
+erkannt und im Bildkoordinatensystem lokalisiert werden.
+
+2. Spezifische Module für ERIKA
+
+In diesem Komplex zielen die Aufgaben auf die weitere Entwicklung der Fertigkeiten
+von ERIKA, unserem RoboCup@Work-System. Einige von Ihnen arbeiten ja bereits im
+Team TUFbots an konkreten Fragestellungen, wiederum andere würden gern einsteigen.
+Denken Sie bitte daran, dass Sie ggf. im Laufe des Semesters nicht direkt auf dem
+Roboter arbeiten können. ROS bags oder Erfahrung in einer Simulationsumgebung
+könnten hier hilfreich sein.
 
 ## Ablaufplan
 
-| **Datum** | **Vorträge**    |
-|:----------|:----------------|
-| 29.04.20  | Team X / Team Y |
-| 06.05.20  | Team X / Team Y |
-| 13.05.20  | Team X / Team Y |
-| 20.05.20  | Team X / Team Y |
-| 27.05.20  | Team X / Team Y |
-| 03.06.20  | Team X / Team Y |
-| 10.06.20  | Team X / Team Y |
-| 17.06.20  | Team X / Team Y |
-| 24.06.20  | Team X / Team Y |
-| 01.07.20  | Team X / Team Y |
-| 08.07.20  | Team X / Team Y |
-| 15.07.20  | Team X / Team Y |
+Die Gruppen zum ersten Aufgabenkomplexe treffen sich wöchentlich Montags 09:15 - 10:45.
+Die Gruppen zum zweiten Aufgabenkomplexe treffen sich wöchentlich Montags 16:00 - 17:30.
+
+Zusätzlich werden an diesen Terminen die Vorträge eingegliedert:
+
+### Ablaufplan für die Vorträge
+
+| **Datum**              | **Vorträge**     |
+|:-----------------------|:-----------------|
+| 04.05.20 09:15 - 10:45 | Exposé           |
+| 04.05.20 16:00 - 17:30 | Exposé           |
+| 11.05.20 09:15 - 10:45 | Exposé           |
+| 11.05.20 16:00 - 17:30 | Exposé           |
+| 08.06.20 09:15 - 10:45 | Zwischenstand    |
+| 08.06.20 16:00 - 17:30 | Zwischenstand    |
+| 15.06.20 09:15 - 10:45 | Zwischenstand    |
+| 15.06.20 16:00 - 17:30 | Zwischenstand    |
+| 13.07.20 09:15 - 10:45 | Abschlussvortrag |
+| 13.07.20 16:00 - 17:30 | Abschlussvortrag |
+| 20.07.20 09:15 - 10:45 | Abschlussvortrag |
+| 20.07.20 16:00 - 17:30 | Abschlussvortrag |
 
 ## Bewertungskriterien und ihre Gewichtung
 
