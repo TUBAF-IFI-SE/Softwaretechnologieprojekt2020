@@ -68,7 +68,27 @@ Der Klassifikator durchläuft dabei im allgemeinen folgende Schritte:
 2. Durchsuchen der Pixel zur Detektion von Mustern
    * Wenn Muster erkannt: Objekt ist detektiert, Bounding Box wird gebildet
 3. Klassifikation der detektierten Objekte (möglicherweise zuammen mit Schritt 2)
-4. Ausgabe der Liste der detektierten Objekte mit Bounding Box und Namen.
+4. Ausgabe der Liste der detektierten Objekte mit Bounding Box und Namen als XML-Datei
+
+**Daten**
+
+Die Daten, die euch zur Verfügung stehen, setzen sich aus einem Trainingsdatenset und Validierungsdaten zusammen. Zur Bestimmung der Güte eurer Klassifikatoren, werden wir ein separates Set von Testdaten bereithalten.
+
+**Aufruf**
+
+Um euren Klassifikator mit den Testdaten testen zu können, soll folgender Aufruf genügen:
+
+```
+./classifier --input <path-to-folder-containig-images> --output <path-to-output-folder>
+```
+
+**Zielsystem**
+
+Das Zielsystem ist ein Ubuntu 18.04.
+
+**Test-Skript**
+
+Wir werden im Laufe des Semesters ein Programm zum Testen eurer Klassifikatoren veröffentlichen. Diese Programm wird auch für den finalen Test genutzt. Ihr könnt es bereits während des Semester nutzen um die Performance eurer Klassifikatoren einzuschätzen.
 
 ### Spezifische Module für ERIKA
 
