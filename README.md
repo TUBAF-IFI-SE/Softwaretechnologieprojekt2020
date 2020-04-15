@@ -38,11 +38,44 @@ Die interaktive Ansicht dieses Kurses ist unter folgendem [Link](https://liascri
 **2. Spezifische Module für ERIKA**
 
    In diesem Komplex zielen die Aufgaben auf die weitere Entwicklung der Fertigkeiten
-   von ERIKA, unserem RoboCup@Work-System. Einige von Ihnen arbeiten ja bereits im
-   Team TUFbots an konkreten Fragestellungen, wiederum andere würden gern einsteigen.
-   Denken Sie bitte daran, dass Sie ggf. im Laufe des Semesters nicht direkt auf dem
-   Roboter arbeiten können. ROS bags oder Erfahrung in einer Simulationsumgebung
-   könnten hier hilfreich sein.
+   von ERIKA, unserem RoboCup@Work-System. Hier stehen die folgenden Themen zur Auswahl:
+
+* **Statemachine** - Überwachung und Darstellung des Zustands in dem sich der Roboter befindet
+* **Wahrnehmung** - Sensorische Wahrnehmung des Roboter und entsprechende Verarbeitung (z.B. Filter)
+* **Navigation** - Planung und Ausführung von Bewegungen des Roboters basierend auf den Daten des aktuellen Weltmodells
+* **Manipulator** - Greifen von detektierten Objekten (siehe Aufgabenkomplex 1)
+
+### Extraktion von RoboCup Objekten aus 2D Kamera-Bildern
+
+Zur Extraktion wird ein allgemeines Vorgehen der entsprechenden Abbildung angenommen:
+
+<!-- style="display: block; margin-left: auto; margin-right: auto; max-width: 315px;" -->
+```    ascii
+  +-------------+   +------------+   +---------------+   +-------------+
+  |             |   |            |   |               |   |             |
+  |   Dateien   +-->| Datenbank  +-->+ Klassifikator +-->|  Ergebnis   |
+  |    (.jpg)   |   | (optional) |   |               |   | (.jpg/.xml) |  
+  |             |   |            |   |               |   |             |
+  +-------------+   +------------+   +---------------+   +-------------+
+```
+
+* Eingabe: Pfad zu einem Ordner mit Bild-Dateien (.jpg)
+* Ausgabe: Pfad zu einem Ordner, der mit Klassifikationsergebnissen (.xml) und Bild-Dateien gefüllt wird (.jpg).
+
+Der Klassifikator durchläuft dabei im allgemeinen folgende Schritte:
+
+1. Lesen/Empfangen eines Bildes
+2. Durchsuchen der Pixel zur Detektion von Mustern
+   * Wenn Muster erkannt: Objekt ist detektiert, Bounding Box wird gebildet
+3. Klassifikation der detektierten Objekte (möglicherweise zuammen mit Schritt 2)
+4. Ausgabe der Liste der detektierten Objekte mit Bounding Box und Namen.
+
+### Spezifische Module für ERIKA
+
+* **Statemachine** - Überwachung und Darstellung des Zustands in dem sich der Roboter befindet
+* **Wahrnehmung** - Sensorische Wahrnehmung des Roboter und entsprechende Verarbeitung (z.B. Filter)
+* **Navigation** - Planung und Ausführung von Bewegungen des Roboters basierend auf den Daten des aktuellen Weltmodells
+* **Manipulator** - Greifen von detektierten Objekten (siehe Aufgabenkomplex 1)
 
 ## Ablaufplan
 
