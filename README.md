@@ -14,9 +14,6 @@ script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
 
 link: https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
 
-translation: Deutsch  translations/German.md
-translation: Français translations/French.md
-translation: Русский  translations/Russian.md
 
 
 -->
@@ -25,85 +22,50 @@ translation: Русский  translations/Russian.md
 
 Die interaktive Ansicht dieses Kurses ist unter folgendem [Link](https://liascript.github.io/course/?https://raw.githubusercontent.com/TUBergakademieFreiberg/Softwaretechnologieprojekt2020/master/README.md) verfügbar.
 
-## Aufgabenkomplexe
+Das Ziel des Softwaretechnologie-Projektes ist die Vermittlung praktischer Fähigkeiten und Vorgehensweise zur Erstellung von Software in einem Teamprojekt.
 
-**1. Extraktion von RoboCup Objekten aus 2D Kamera-Bildern**
+In diesem Jahr stehen dazu zwei Aufgabenkomplexe zur Auswahl:
 
-   In diesem Kontext arbeiten die Teams kompetitiv an einer identischen
-   Aufgabenstellung. Wir haben einen Zugriff auf mehrere tausend Bilder anderer
-   Teams, die den Blick des Roboters auf die Arbeitsflächen enthalten. Darauf sind
-   die zu handhabenden Objekte mehr oder minder wahllos verstreut. Diese müssen
-   erkannt und im Bildkoordinatensystem lokalisiert werden.
-
-**2. Spezifische Module für ERIKA**
-
-   In diesem Komplex zielen die Aufgaben auf die weitere Entwicklung der Fertigkeiten
-   von ERIKA, unserem RoboCup@Work-System. Hier stehen die folgenden Themen zur Auswahl:
-
-* **Statemachine** - Überwachung und Darstellung des Zustands in dem sich der Roboter befindet
-* **Wahrnehmung** - Sensorische Wahrnehmung des Roboter und entsprechende Verarbeitung (z.B. Filter)
-* **Navigation** - Planung und Ausführung von Bewegungen des Roboters basierend auf den Daten des aktuellen Weltmodells
-* **Manipulator** - Greifen von detektierten Objekten (siehe Aufgabenkomplex 1)
-
-### Extraktion von RoboCup Objekten aus 2D Kamera-Bildern
-
-Zur Extraktion wird ein allgemeines Vorgehen der entsprechenden Abbildung angenommen:
-
-<!-- style="display: block; margin-left: auto; margin-right: auto; max-width: 315px;" -->
-```    ascii
-  +-------------+   +------------+   +---------------+   +-------------+
-  |             |   |            |   |               |   |             |
-  |   Dateien   +-->| Datenbank  +-->+ Klassifikator +-->|  Ergebnis   |
-  |    (.jpg)   |   | (optional) |   |               |   | (.jpg/.xml) |  
-  |             |   |            |   |               |   |             |
-  +-------------+   +------------+   +---------------+   +-------------+
-```
-
-* Eingabe: Pfad zu einem Ordner mit Bild-Dateien (.jpg)
-* Ausgabe: Pfad zu einem Ordner, der mit Klassifikationsergebnissen (.xml) und Bild-Dateien gefüllt wird (.jpg).
-
-Der Klassifikator durchläuft dabei im allgemeinen folgende Schritte:
-
-1. Lesen/Empfangen eines Bildes
-2. Durchsuchen der Pixel zur Detektion von Mustern
-   * Wenn Muster erkannt: Objekt ist detektiert, Bounding Box wird gebildet
-3. Klassifikation der detektierten Objekte (möglicherweise zuammen mit Schritt 2)
-4. Ausgabe der Liste der detektierten Objekte mit Bounding Box und Namen als XML-Datei
-
-**Daten**
-
-Die Daten, die euch zur Verfügung stehen, setzen sich aus einem Trainingsdatenset und Validierungsdaten zusammen. Zur Bestimmung der Güte eurer Klassifikatoren, werden wir ein separates Set von Testdaten bereithalten.
-
-**Aufruf**
-
-Um euren Klassifikator mit den Testdaten testen zu können, soll folgender Aufruf genügen:
-
-```
-./classifier --input <path-to-folder-containig-images> --output <path-to-output-folder>
-```
-
-**Zielsystem**
-
-Das Zielsystem ist ein Ubuntu 18.04.
-
-**Test-Skript**
-
-Wir werden im Laufe des Semesters ein Programm zum Testen eurer Klassifikatoren veröffentlichen. Diese Programm wird auch für den finalen Test genutzt. Ihr könnt es bereits während des Semester nutzen um die Performance eurer Klassifikatoren einzuschätzen.
-
-### Spezifische Module für ERIKA
-
-* **Statemachine** - Überwachung und Darstellung des Zustands in dem sich der Roboter befindet
-* **Wahrnehmung** - Sensorische Wahrnehmung des Roboter und entsprechende Verarbeitung (z.B. Filter)
-* **Navigation** - Planung und Ausführung von Bewegungen des Roboters basierend auf den Daten des aktuellen Weltmodells
-* **Manipulator** - Greifen von detektierten Objekten (siehe Aufgabenkomplex 1)
+1. Extraktion von RoboCup-Objekten aus 2D Kamera-Bildern
+2. Spezifische Module für ERIKA
 
 ## Ablaufplan
 
-Wöchentliche Meetings:
-* Gruppen zum ersten Aufgabenkomplexe Montags 09:15 - 10:45
-* Gruppen zum zweiten Aufgabenkomplexe Montags 16:00 - 17:30
+**Wöchentliche Meetings:**
 
-Zusätzlich werden an diesen Terminen die Vorträge eingegliedert:
+| Aufgabenkomplex | Meeting               |
+|:----------------|:----------------------|
+| 1               | Montags 09:15 - 10:45 |
+| 2               | Montags 16:00 - 17:30 |
+
+**Bei jedem Meeting wird ein Mitglied von jedem Team kurz die Fortschritte zusammenfassen:**
+* Welche Ziele wurden für die Woche gesetzt?
+* Welche Ziele wurden erreicht, welche nicht? Warum?
+* Welche Ziele gibt es für die kommende Woche?
+
+Jedes Team sollte diese Fortschritte, genannten Ziele und Probleme entsprechend dokumentieren. Hier bieten sich Wikis, Issues, Protokolle, ... an!
+
+Daraufhin wird es die Möglichkeit geben über die aktuellen Probleme zu diskutieren, oder gegebenenfalls einen individuellen Termin zur Lösung schwierigerer Fragestellungen zu vereinbaren.
+Zusätzlich wird jedes Team drei Vorträge halten.
+
+**Vorträge**
+
+* Exposé:
+
+  * Motivation des Projektes
+  * Stand der Technik
+  * Zeitliche und inhaltliche Planung des Projektes (Meilensteinplanung)
+
+* Zwischenstand:
+
+  * Vorstellung der (angestrebten) Softwarestruktur
+  * Stand der Implementierung
+  * Wo steht ihr bezüglich des Plans? Sind Anpassungen notwendig?
+
+* Abschlussvortrag:
+  * Zusammenfassung des Projektes (zeitlich, inhaltlich, konzeptionell)
+
+
 
 **Ablaufplan für die Vorträge**
 
@@ -138,13 +100,14 @@ Entscheidend ist hierbei jedoch, dass (neben den Vorträgen, die auch der Dokume
 **3. Tooling (1/9)**
 
 Neben den dokumentativen Aufgaben kann der Einsatz der richtigen Tools dramatisch zum Erfolg/Misserfolg eines Projektes beitragen.
-Dementsprechend (soweit sinnvoll) Tools zur Automatisierung/Unterstützung des Entwicklungsprozesses eingesetzt werden.
+Dementsprechend sollten (soweit sinnvoll) Tools zur Automatisierung/Unterstützung des Entwicklungsprozesses eingesetzt werden.
 Dokumentiert sowohl den Einsatz der Tools, als auch, wie hilfreich ihr diese Empfunden habt.
 
 **4. Softwarearchitektur (1/9)**
 
 Letztlich steht auch die Softwarearchitektur als zentrale Komponent eines Softwareprojekts im Fokus des Semesters.
 Hier soll vor allem eine konsistente, intuitive Struktur angestrebt werden.
+*Hinweis: Eine Software, die sich schlecht dokumentieren lässt, ist vermutlich nicht intuitiv oder gar schlecht strukturiert!*
 
 
 **Beispielrechnung:**
@@ -152,3 +115,82 @@ Hier soll vor allem eine konsistente, intuitive Struktur angestrebt werden.
 | **Vortrag 1**   | **Vortrag 2**    | **Vortrag 3**    | **Dokumentation** | **Tooling**      | **Softwarearchitektur** | **Note** |
 |:----------------|:-----------------|:-----------------|:------------------|:-----------------|:------------------------|:---------|
 | $1.0 \cdot 2/9$ | $2.3 \cdot  2/9$ | $1.3 \cdot  2/9$ | $2.0 \cdot 1/9$   | $1.3 \cdot  1/9$ | $1.7 \cdot 1/9$         | **1.7**  |
+
+
+## Aufgabenkomplexe
+
+**1. Extraktion von RoboCup Objekten aus 2D Kamera-Bildern**
+
+   In diesem Kontext arbeiten die Teams kompetitiv an einer identischen
+   Aufgabenstellung. Wir haben einen Zugriff auf mehrere tausend Bilder anderer
+   Teams, die den Blick des Roboters auf die Arbeitsflächen enthalten. Darauf sind
+   die zu handhabenden Objekte mehr oder minder wahllos verstreut. Diese müssen
+   erkannt und im Bildkoordinatensystem lokalisiert werden.
+
+**2. Spezifische Module für ERIKA**
+
+   In diesem Komplex zielen die Aufgaben auf die weitere Entwicklung der Fertigkeiten
+   von ERIKA, unserem RoboCup@Work-System. Hier stehen die folgenden Themen zur Auswahl:
+
+* **Statemachine** - Überwachung und Darstellung des Zustands in dem sich der Roboter befindet
+* **Wahrnehmung** - Sensorische Wahrnehmung des Roboter und entsprechende Verarbeitung (z.B. Filter)
+* **Navigation** - Planung und Ausführung von Bewegungen des Roboters basierend auf den Daten des aktuellen Weltmodells
+* **Manipulator** - Greifen von detektierten Objekten (siehe Aufgabenkomplex 1)
+
+**Erste Schritte**
+
+Nutzt die Teambeschreibungs-Paper des RoboCup@Work [Link](???) um einen Überblick über den Stand der Technik zu erhalten. Dieser soll entsprechend dokumentiert und im Exposé-Vortrag dargestellt werden.
+
+### Extraktion von RoboCup Objekten aus 2D Kamera-Bildern
+
+**Gegeben:** Trainings- und Validierungsdaten bestehend aus Bildern (.jpg) und Metadaten (.xml). Die Metadaten umfassen im wesentlichen die Namen/Klassen der in den Bildern zu sehenden Objekte, sowie ihre *Bounding Box* im Bildkoordinatensystem.
+
+**Ausgabe:** Anzahl der erkannten Objekte in einem neuen Bild, sowie deren Metadaten.
+
+Zur Extraktion wird ein allgemeines Vorgehen entsprechenden der Abbildung angenommen:
+
+<!-- style="display: block; margin-left: auto; margin-right: auto; max-width: auto;" -->
+```    ascii
+  +-------------+   +------------+   +---------------+   +-------------+
+  |             |   |            |   |               |   |             |
+  |   Dateien   +-->| Datenbank  +-->+   Objekt-     +-->|  Ergebnis   |
+  |    (.jpg)   |   | (optional) |   |   detektion   |   | (.jpg/.xml) |  
+  |             |   |            |   |               |   |             |
+  +-------------+   +------------+   +---------------+   +-------------+
+```
+
+Der Klassifikator durchläuft dabei im Allgemeinen folgende Schritte:
+
+1. Lesen/Empfangen eines Bildes
+2. Durchsuchen der Pixel zur Detektion von Mustern
+   * Wenn Muster erkannt: Objekt ist detektiert, Bounding Box wird gebildet
+3. Klassifikation der detektierten Objekte (möglicherweise zuammen mit Schritt 2)
+4. Ausgabe der Liste der detektierten Objekte mit Bounding Box und Namen als XML-Datei
+
+**Bewertung der Objektdetektoren**
+
+Zur Bewertung der implemetierten Detektoren wird im Laufe des Semesters ein Evaluationsskript veröffentlicht. Nach derzeitigem Stand wird es eine Möglichkeit geben, dieses automatisiert während der Entwicklung der Detektoren wiederholt auszuführen.
+
+**Daten**
+
+Die Daten, die euch zur Verfügung stehen, setzen sich aus einem Trainingsdatenset und Validierungsdaten zusammen. Zur Bestimmung der Güte eurer Klassifikatoren, werden wir ein separates Set von Testdaten bereithalten.
+
+**Aufruf**
+
+Um euren Detektor mit den Testdaten testen zu können, soll folgender Aufruf genügen:
+
+```
+./classifier --input <path-to-folder-containig-images> --output <path-to-output-folder>
+```
+
+**Zielsystem**
+
+Das Zielsystem ist ein Ubuntu 18.04. Es wird darüber hinaus aber auch die Möglichkeit geben ein Docker-Image zu spezifizieren. In dieses Image wird eine Nvidia-Grafikkarte (CUDA) gelinkt werden, sodass auch Grafikkarten zur Beschleunigung der Detektion zur Verfügung stehen.
+
+
+### Spezifische Module für ERIKA
+
+* **Statemachine** - Überwachung und Darstellung des Zustands in dem sich der Roboter befindet
+* **Wahrnehmung** - Sensorische Wahrnehmung des Roboter und entsprechende Verarbeitung (z.B. Filter)
+* **Navigation** - Planung und Ausführung von Bewegungen des Roboters basierend auf den Daten des aktuellen Weltmodells
+* **Manipulator** - Greifen von detektierten Objekten (siehe Aufgabenkomplex 1)
