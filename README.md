@@ -34,8 +34,7 @@ In diesem Jahr stehen dazu zwei Aufgabenkomplexe zur Auswahl:
 **1. Extraktion von RoboCup Objekten aus 2D Kamera-Bildern**
 
    In diesem Kontext arbeiten die Teams kompetitiv an einer identischen
-   Aufgabenstellung. Wir haben einen Zugriff auf mehrere tausend Bilder anderer
-   Teams, die den Blick des Roboters auf die Arbeitsflächen enthalten. Darauf sind
+   Aufgabenstellung. Wir stellen einen Datensatz bestehend aus 2D Kamera-Bildern, die den Blick des Roboters auf die Arbeitsflächen enthalten. Darauf sind
    die zu handhabenden Objekte mehr oder minder wahllos verstreut. Diese müssen
    erkannt und im Bildkoordinatensystem lokalisiert werden.
 
@@ -44,8 +43,8 @@ In diesem Jahr stehen dazu zwei Aufgabenkomplexe zur Auswahl:
    In diesem Komplex zielen die Aufgaben auf die weitere Entwicklung der Fertigkeiten
    von ERIKA, unserem RoboCup@Work-System. Hier stehen die folgenden Themen zur Auswahl:
 
-* **Statemachine** - Überwachung und Darstellung des Zustands in dem sich der Roboter befindet
-* **Wahrnehmung** - Sensorische Wahrnehmung des Roboter und entsprechende Verarbeitung (z.B. Filter)
+* **Statemachine** - Neben der Überwachung und Darstellung des Zustands in dem sich der Roboter befindet, gliedert sich hier auch die Handlungsplanung ein.
+* **Wahrnehmung** - Sensorische Wahrnehmung des Roboter und entsprechende Verarbeitung (z.B. Filter, Erstellung von Umgebungskarten, Erkennung von Barriertapes)
 * **Navigation** - Planung und Ausführung von Bewegungen des Roboters basierend auf den Daten des aktuellen Weltmodells
 * **Manipulator** - Greifen von detektierten Objekten (siehe Aufgabenkomplex 1)
 
@@ -101,10 +100,21 @@ Möglicherweise bietet sich die Generierung einer Datenbank an, die dynamisch an
 
 ### Spezifische Module für ERIKA
 
-* **Statemachine** - Überwachung und Darstellung des Zustands in dem sich der Roboter befindet
-* **Wahrnehmung** - Sensorische Wahrnehmung des Roboter und entsprechende Verarbeitung (z.B. Filter)
+Unser RoboCup@Work-System kann in folgenden Punkten unterstützt werden:
+
+* **Statemachine** - Neben der Überwachung und Darstellung des Zustands in dem sich der Roboter befindet, gliedert sich hier auch die Handlungsplanung ein.
+* **Wahrnehmung** - Sensorische Wahrnehmung des Roboter und entsprechende Verarbeitung (z.B. Filter, Erstellung von Umgebungskarten, Erkennung von Barriertapes)
 * **Navigation** - Planung und Ausführung von Bewegungen des Roboters basierend auf den Daten des aktuellen Weltmodells
 * **Manipulator** - Greifen von detektierten Objekten (siehe Aufgabenkomplex 1)
+
+**Erste Schritte**
+
+Macht euch zunächst mit dem Team und dem Roboter-System (bzw. die darauf eingesetzte Software) vertraut.
+Noch stärker als zuvor kommt es hier auf die Kommunikation mit dem gesamten RoboCup-Team an.
+Nutz die Gelegenheit um:
+
+1. Die Schnittstellen eures Softwareprojekts zu anderen Aktivitäten im Team zu spezifizieren
+2. Das vorhandene Wissen im Team über die Programmierung des Roboters zu erlernen.
 
 
 ## Ablaufplan
