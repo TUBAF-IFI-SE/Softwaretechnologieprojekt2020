@@ -165,6 +165,7 @@ Zusätzlich wird jedes Team drei Vorträge halten.
 
 Die Exposé-, Zwischenstands- und Verteidigungsvorträge werden mit 2/3 den Großteil der Bewertung ausmachen.
 Hier geht es darum alle Aspekte des Projektes anschaulich und selbstkritisch Darzustellen.
+Im Fokus stehen die eingesetzen Techniken und Konzepte, sowie Entscheidungsprozesse zu dokumentieren und zu begründen.
 
 **2. Dokumentation (1/9)**
 
