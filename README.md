@@ -94,6 +94,7 @@ Informiert euch über den Stand der Technik im Bereich der Objektklassifikation 
 
 * Welche Methodiken und Ansätze gibt es?
 * Wie funktionieren diese?
+* Für welchen wollt ihr euch entscheiden?
 
 Verschafft euch zunächst einen Überblick über die Daten:
 
