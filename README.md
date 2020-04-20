@@ -50,9 +50,9 @@ In diesem Jahr stehen dazu zwei Aufgabenkomplexe zur Auswahl:
 
 ### Extraktion von RoboCup Objekten aus 2D Kamera-Bildern
 
-**Gegeben:** Trainings- und Validierungsdaten bestehend aus Bildern (.jpg) und Metadaten (.xml). Die Metadaten umfassen im wesentlichen die Namen/Klassen der in den Bildern zu sehenden Objekte, sowie ihre *Bounding Box* im Bildkoordinatensystem.
+**Gegeben:** Trainings- und Validierungsdaten bestehend aus Bildern und Metadaten im [COCO Format](http://cocodataset.org/#format-data). Die Metadaten umfassen im wesentlichen die Namen/Klassen der in den Bildern zu sehenden Objekte, sowie ihre *Bounding Box* im Bildkoordinatensystem.
 
-**Ausgabe:** Anzahl der erkannten Objekte in einem neuen Bild, sowie deren Metadaten.
+**Ausgabe:** Anzahl der erkannten Objekte in einem Bild, sowie deren Metadaten. Die Ausgabe geschieht ebenfalls im COCO Format.
 
 Zur Extraktion wird ein allgemeines Vorgehen entsprechenden der Abbildung angenommen:
 
@@ -90,10 +90,15 @@ Das Zielsystem ist ein Ubuntu 18.04. Es wird darüber hinaus aber auch die Mögl
 
 **Erste Schritte**
 
+Informiert euch über den Stand der Technik im Bereich der Objektklassifikation und -erkennung:
+
+* Welche Methodiken und Ansätze gibt es?
+* Wie funktionieren diese?
+
 Verschafft euch zunächst einen Überblick über die Daten:
 
 * Wie sind diese strukturiert?
-* Bietet sich das Format (Pascal VOC) an?
+* Bietet sich das Format (COCO) an?
 * Wie könnt/müsst ihr die Daten vorbereiten um sie für eine Objekterkennung nutzen zu können?
 
 Möglicherweise bietet sich die Generierung einer Datenbank an, die dynamisch angefragt werden kann, sodass ihr auch Spezialfälle einfach testen könnt (z.B. Objekte eines bestimmten Typs).
