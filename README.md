@@ -78,7 +78,7 @@ Zur Vereinfachung können drei Phasen unterschieden werden:
 
 **Daten**
 
-Die Daten, die euch zur Verfügung stehen, setzen sich aus einem Trainingsdatenset und Validierungsdaten zusammen. Zur Bestimmung der Güte eurer Klassifikatoren, werden wir ein separates Set von Testdaten bereithalten. Ihr findet die Daten [hier](???)
+Die Daten, die euch zur Verfügung stehen, setzen sich aus einem Trainingsdatenset und Validierungsdaten zusammen. Zur Bestimmung der Güte eurer Klassifikatoren, werden wir ein separates Set von Testdaten bereithalten. Ihr findet die Daten [hier](https://ificloud.xsitepool.tu-freiberg.de/index.php/s/awxXKQLyAGQk2Ga)
 
 **Bewertung der Objektdetektoren**
 
