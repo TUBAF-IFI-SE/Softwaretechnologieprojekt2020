@@ -50,7 +50,7 @@ In diesem Jahr stehen dazu zwei Aufgabenkomplexe zur Auswahl:
 
 ### Extraktion von RoboCup Objekten aus 2D Kamera-Bildern
 
-**Gegeben:** Trainings- und Validierungsdaten bestehend aus Bildern und Metadaten im [COCO Format](http://cocodataset.org/#format-data). Die Metadaten umfassen im wesentlichen die Namen/Klassen der in den Bildern zu sehenden Objekte, sowie ihre *Bounding Box* im Bildkoordinatensystem.
+**Gegeben:** Trainings-, Validierungs- und Testdaten bestehend aus Bildern und Metadaten im [COCO Format](http://cocodataset.org/#format-data). Die Metadaten umfassen im wesentlichen die Namen/Klassen der in den Bildern zu sehenden Objekte, sowie ihre *Bounding Box* im Bildkoordinatensystem.
 
 **Ausgabe:** Anzahl der erkannten Objekte in einem Bild, sowie deren Metadaten. Die Ausgabe geschieht ebenfalls im COCO Format.
 
@@ -78,7 +78,7 @@ Zur Vereinfachung können drei Phasen unterschieden werden:
 
 **Daten**
 
-Die Daten, die euch zur Verfügung stehen, setzen sich aus einem Trainingsdatenset und Validierungsdaten zusammen. Zur Bestimmung der Güte eurer Klassifikatoren, werden wir ein separates Set von Testdaten bereithalten. Ihr findet die Daten [hier](https://ificloud.xsitepool.tu-freiberg.de/index.php/s/awxXKQLyAGQk2Ga)
+Die Daten, die euch zur Verfügung stehen, setzen sich aus einem Trainingsdatenset (zum Lernen eines Detektors), Validierungsdaten (zur regelmäßgen überprüfen der Güte des Detektors) und Testdaten (zur finalen Bestimmung der Güte des Detektors) zusammen. Zur Bestimmung der Güte eurer Klassifikatoren, werden wir ein separates Set von Testdaten bereithalten. Ihr findet die Daten [hier](https://ificloud.xsitepool.tu-freiberg.de/index.php/s/awxXKQLyAGQk2Ga)
 
 **Bewertung der Objektdetektoren**
 
