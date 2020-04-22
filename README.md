@@ -146,7 +146,7 @@ Zusätzlich wird jedes Team drei Vorträge halten.
 * Exposé:
 
   * Motivation des Projektes
-  * Stand der Technik (nutzt dazu auch die Teambeschreibungs-Paper des RoboCup@Work [Link](???))
+  * Stand der Technik (nutzt dazu auch die Teambeschreibungs-Paper des RoboCup@Work [Link](https://ificloud.xsitepool.tu-freiberg.de/index.php/s/MsRb76w9wa72J5f))
   * Zeitliche und inhaltliche Planung des Projektes (Meilensteinplanung)
 
 * Zwischenstand:
